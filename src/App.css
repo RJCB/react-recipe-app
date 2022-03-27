@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.main-container {
+	margin: 20px auto 0;
+	text-align: center;
+	border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px var(--medDark);
+	padding: 40px 0;
+}
+header {
+	display: flex;
+    justify-content: center;
+	padding: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img {
+	width: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero {
+	padding-top: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchbar-container {
+    position: relative;
+    max-width: var(--maxWidth);
+    width: 65%;
+    height: 55px;
+    background: var(--medDark);
+    margin: 0 auto 30px auto;
+    border-radius: 40px;
+    color: var(--white);
 }
 
-.App-link {
-  color: #61dafb;
+.searchbar-container img {
+	position: absolute;
+	left: 15px;
+	top: 14px;
+	width: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchbar-container input {
+	font-size: var(--fontBig);
+	position: absolute;
+	left: 0;
+	margin: 8px 0;
+	padding: 0 0 0 60px;
+	border: 0;
+	width: 100%;
+	background: transparent;
+	height: 40px;
+	color: var(--white);
+	outline: none;
+}
+
+.searchbar-container input::placeholder {
+	color: var(--lightGrey);
+}
+
+.cuisines {
+	margin: 0 auto;
+	max-width: 650px;
+}
+
+.cuisines button {
+	cursor: pointer;
+	border: none;
+	background-color: var(--lightGrey);
+	color: var(--superDark);
+	border-radius: 10px;
+	padding: 3px 6px ;
+	letter-spacing: 1px;
+}
+
+.cuisines button:not(:first-child) {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.recipe-thumb {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1.5rem;
+	animation: thumbEaseIn 1.5s;
+	margin: 40px 40px 0 40px;
+}
+
+.recipe-thumb img {
+	border-radius: 10px;
+	width: 300px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.spinner {
+	border: 5px solid var(--lightGrey);
+	border-top: 5px solid var(--medDark);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 0.8s linear infinite;
+	margin: 20px auto;
+}
+
+.error-message {
+	font-size: 2rem;
+}
+
+button.selected {
+	background-color: var(--superDark);
+	color: var(--lightGrey);
+}
+
+.recipe-details ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.details-container {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1.5rem;
+}
+
+.details-instructions {
+	text-align: initial;
+}
+
+/* .details-instructions li::before{
+	content: '-';
+} */
+
+.details-instructions {
+	text-align: center;
+}
+
+/* Animations */
+@keyframes spin {
+	0% {
+			transform: rotate(0deg);
+	}
+	100% {
+			transform: rotate(360deg);
+	}
+}
+
+@keyframes thumbEaseIn {
+	from {
+			opacity: 0;
+	}
+	to {
+			opacity: 1;
+	}
 }

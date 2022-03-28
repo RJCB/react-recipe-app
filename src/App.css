@@ -109,6 +109,10 @@ button.selected {
 	color: var(--lightGrey);
 }
 
+.main-container.recipe-details {
+	position: relative;
+}
+
 .recipe-details h1{
 	text-decoration: underline;
 }

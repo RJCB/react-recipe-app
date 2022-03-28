@@ -109,28 +109,62 @@ button.selected {
 	color: var(--lightGrey);
 }
 
+.recipe-details h1{
+	text-decoration: underline;
+}
+
 .recipe-details ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.details-container {
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1.5rem;
+.recipe-details .back-to-home {
+	position: absolute;
+	left: 10px;
 }
 
-.details-instructions {
+.details-container {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	margin: 0 20px;
+}
+
+.details-instructions, .details-ingredients {
 	text-align: initial;
 }
 
-/* .details-instructions li::before{
-	content: '-';
-} */
+.recipe-details .details-brief-info span {
+	padding-left: 5px;
+	padding-right: 5px;
+}
 
-.details-instructions {
-	text-align: center;
+.details-icon {
+	animation: showHideIcons 3s infinite ease-in-out;
+}
+
+.details-image {
+	margin: auto;
+}
+
+.recipe-details button {
+	font-size: 1rem;
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+	color: var(--medDark);
+	background: var(--white);
+	border: 1px solid var(--medDark);
+}
+
+.details-info {
+	border-left: 2px solid var(--lightGrey);
+	padding-left: 20px;
+}
+
+.recipe-details button.active {
+    background: var(--medDark);
+    color: var(--white);
 }
 
 /* Animations */
@@ -146,6 +180,15 @@ button.selected {
 @keyframes thumbEaseIn {
 	from {
 			opacity: 0;
+	}
+	to {
+			opacity: 1;
+	}
+}
+
+@keyframes showHideIcons {
+	from {
+			opacity: 0.3;
 	}
 	to {
 			opacity: 1;

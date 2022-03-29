@@ -20,6 +20,8 @@ const RecipeDetails = () => {
     const [error, setError] = useState(false);
     const [recipeDetails, setRecipeDetails] = useState([]);
     const [showIngredients, setShowIngredients] = useState(false);
+
+    // fetch recipes by ID which is pulled in from the :route when user clicks on a specific recipe on homepage
     useEffect(() => {
         const fetchRecipeById = async () => {
             try {

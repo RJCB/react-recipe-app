@@ -5,6 +5,7 @@ import searchIcon from "../images/search-icon.svg";
 import cuisineOptions from "../cuisineOptions.json";
 
 const Hero = ({ searchTerm, setSearchTerm, handleCuisineSelection, cuisineState }) => {
+    //Render a list of Cuisine elements
     const cuisineElements = cuisineOptions.cuisines.map((cuisine, index) => {
         return <button className={cuisineState === cuisine ? "selected" : ""} key={index} value={cuisine} onClick={e => handleCuisineSelection(e.target.value)}>{cuisine}</button>
     })

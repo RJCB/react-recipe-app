@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-recipe-app/static/css/main.4827c24c.css",
+    "main.css": "/react-recipe-app/static/css/main.f5514f04.css",
     "main.js": "/react-recipe-app/static/js/main.1913a959.js",
     "static/media/no_image.jpg": "/react-recipe-app/static/media/no_image.22d2aa4d1af1a092666a.jpg",
     "static/media/recipe-icon.png": "/react-recipe-app/static/media/recipe-icon.41d8c7504b51ac14239f.png",
     "static/media/cutlery-icon.png": "/react-recipe-app/static/media/cutlery-icon.1ac9095b202211c1ca48.png",
     "index.html": "/react-recipe-app/index.html",
     "static/media/search-icon.svg": "/react-recipe-app/static/media/search-icon.cd820f5a55f7cd57d7131f1672d43473.svg",
-    "main.4827c24c.css.map": "/react-recipe-app/static/css/main.4827c24c.css.map",
+    "main.f5514f04.css.map": "/react-recipe-app/static/css/main.f5514f04.css.map",
     "main.1913a959.js.map": "/react-recipe-app/static/js/main.1913a959.js.map"
   },
   "entrypoints": [
-    "static/css/main.4827c24c.css",
+    "static/css/main.f5514f04.css",
     "static/js/main.1913a959.js"
   ]
 }

@@ -149,6 +149,9 @@ button.selected {
 
 .details-image {
 	margin: auto;
+}
+
+.details-image img {
 	max-width: 100%;
 }
 

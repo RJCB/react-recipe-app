@@ -6,7 +6,7 @@ import RecipeDetails from "./components/RecipeDetails";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
